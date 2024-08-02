@@ -37,6 +37,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+    min-height: 100vh;
 }
 ol, ul {
     list-style: none;
@@ -52,6 +54,10 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+.content-wrap {
+    padding-bottom: 5rem;
 }
 
 .banner {
@@ -340,6 +346,8 @@ table {
     display: flex;
     justify-content: space-between;
     color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
 }
 
 .rodape__icones {

@@ -16,9 +16,11 @@
 
 <body>
     {% include 'partials/_menu.html' %}
-    {% block content %}
-    
-    {% endblock %}
+    <div class="content-wrap">
+        {% block content %}
+        
+        {% endblock %}
+    </div>
     {% include 'partials/_footer.html' %}
 </body>
 
