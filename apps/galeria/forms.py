@@ -4,7 +4,12 @@ from apps.galeria.models import Fotografia
 class FotografiaForms(forms.ModelForm):
     class Meta:
         model = Fotografia
-        exclude = ['publicado',]
+        exclude = ['publicada',]
+        labels = {
+            'descricao': 'Descrição',
+            'data_fotografia': 'Data de Registro',
+            'usuario': 'Usuário',
+        }
         
         widgets = {
             'nome': forms.TextInput(attrs={'class':'form-control'}),
