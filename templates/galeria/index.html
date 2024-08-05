@@ -7,7 +7,7 @@
 			<section class="banner">
 				<img
 					class="banner__imagem"
-					src="{% static '/assets/imagens/Banner(2).png' %}"
+					src="{% static 'assets/imagens/Banner(2).png' %}"
 					alt="banner Alura Space"
 				/>
 				<h1 class="banner__titulo">
@@ -51,7 +51,7 @@
 									{% if fotografia.foto == "" or fotografia.foto == None %}
 										<img
 											class="card__imagem"
-											src="{% static '/assets/imagens/galeria/not-found.png' %}"
+											src="{% static 'assets/imagens/galeria/not-found.png' %}"
 											alt="foto"
 										/>
 									{% else %}
@@ -69,7 +69,7 @@
 											<p class="card__descricao">{{ fotografia.legenda }}</p>
 											<span>
 												<img
-													src="{% static '/assets/ícones/1x/favorite_outline.png' %}"
+													src="{% static 'assets/ícones/1x/favorite_outline.png' %}"
 													alt="ícone de coração"
 												/>
 											</span>
